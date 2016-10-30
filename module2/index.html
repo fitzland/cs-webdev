@@ -3,23 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
+<title>Coursera Assignment: Module 2 ~ Responsive Layout</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <style>
-
+<!-- styles in an external file -->
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+
+<h1>Module 2 Assignment</h1>
+<h2>Things to Remember</h2>
 
 <div class="row">
-  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 2</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 5</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+  <section class="col-lg-3 col-md-2">
+    <article>
+      <header id="item1">Atom</header>
+      <p>open file with <code>ctrl+O</code></p>
+      <p>open folder with <code>ctrl+shft+O</code></p>
+      <p>open command palette <code>ctrl+shft+P</code></p>
+      <p>open fuzzy finder <code>ctrl+T</code></p>
+    </article>
+  </section>
+  <section class="col-lg-3 col-md-2">
+    <article>
+      <header id="item2">github</header>
+      <p>first edit file</p><code>$ git add .</code><br><code>$ git commit -m "message"</code><br><code>$ git push</code>
+    </article>
+  </section>
+  <section class="col-lg-3 col-md-1">
+    <article>
+      <header id="item3">browser-sync</header>
+      <p>@ terminal use following command</p>
+      <code>browser-sync start --server --directory --file "*"</code>
+    </article>
+  </section>
 </div>
 
 </body>
