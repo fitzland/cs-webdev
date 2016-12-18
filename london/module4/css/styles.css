@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  padding-top: 0px;
+  background-color: #333c4d;
+  color: #F8F8F2;
+}
+
+h1, h2, h3 {
+  font-family: font-family: 'Work Sans', sans-serif;
+}
+
+h3 {
+  margin: 10px 0;
+}
+p {
+  font-family: 'Taviraj', serif;
+}
+
+article {
+  margin: 10px 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.container {
+  margin: 0;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #333c4d;
+}
+.navbar-nav {
+  margin: 0;
+}
+.navbar-collapse {
+  padding: 0;
+}
+.navbar-brand h1 {
+  color: #333c4d;
+  margin-top: -10px;
+  margin-left: 2px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+ul#nav-list {
+  background-color: lightblue;
+  color: #333c4d;
+  font-size: 1.5em;
+  padding: 0;
+}
+
+#section1 {
+  background-color: lightsalmon;
+  color: #333;
+}
+#section2 {
+  background-color: lightpink;
+  color: #222;
+}
+#section3 {
+  background-color: palegreen;
+  color: #333;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+}
