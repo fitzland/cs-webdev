@@ -1,4 +1,4 @@
-/********** Base styles **********/
+/********** BASE styles **********/
 
 * {
   box-sizing: border-box;
@@ -17,7 +17,9 @@ h1 {
   font-weight: bolder;
   font-size: 50px;
   text-transform: capitalize;
-  /*color: #ffc966;*/
+  /*color: #709EA8;*/
+  /* left out color since inherited from body
+  AND could not get javascript to change on event */
 }
 
 h2 {
@@ -25,10 +27,20 @@ h2 {
 }
 
 p {
-  color: #709EA8;
+  /*color: #709EA8;*/
+  /* left out color since inherited from body */
   clear: right;
+  margin-bottom: 20px;
 }
 
+ul {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 2px 8px;
+  border-radius: 5px;
+}
 article {
   height: 150px;
   margin: 10px;
@@ -38,18 +50,19 @@ article {
   background-color: #454a54;
 }
 
+/* CONTENT */
 .container .jumbotron {
   box-shadow: 0 0 50px #333;
   border: 2px solid #333;
 }
 
-/* CONTENT */
 #cool1, #cool2, #quote {
   height: 250px;
   width: 100%;
   margin-bottom: 30px;
-  position: relative;
+  position: relative; /* needed so that span can be absolute */
   border: 2px solid;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -67,6 +80,7 @@ article {
   background-position: center;
 }
 
+/* Useful option for placing images during development */
 /*#cool3 {
   background: url('http:placehold.it/768x250') no-repeat;
   background-position: center;
@@ -115,7 +129,7 @@ article {
     height: 416px;
   }
   #quote p {
-    font-size: 2.4em;
+    font-size: 2.6em;
   }
 }
 
@@ -126,7 +140,7 @@ article {
     padding: 0;
   }
   #quote p {
-    font-size: 2.2em;
+    font-size: 2.4em;
   }
 }
 

@@ -16,33 +16,35 @@
 
     <h1 id="title">Fantastic Mr. Fox</h1>
 
-        <div class="jumbotron">
+        <div class="jumbotron" onmouseover="welcome();">
           <img src="./images/jumbotron-768.jpg" alt="tradester" class="img-responsive visible-xs" />
         </div>
 
+        <div id="details" class="alert alert-info" role="alert">Waiting.</div>
+
         <div class="row">
 
-        <section class="col-md-4 col-sm-6 col-xs-12">
+        <section class="col-md-4 col-sm-6 col-xs-12" onmouseover="alpha();">
           <div id="cool1"><span>Alpha</span>
           </div>
         </section>
 
-        <section class="col-md-4 col-sm-6 col-xs-12">
+        <section class="col-md-4 col-sm-6 col-xs-12" onmouseover="bravo();">
           <div id="cool2"><span>Bravo</span>
           </div>
         </section>
 
-        <section class="col-md-4 col-sm-12 col-xs-12">
+        <section class="col-md-4 col-sm-12 col-xs-12" onmouseover="charlie();">
           <div id="quote"><p></p>
           </div>
         </section>
 
   </div>
 
-  <div class="alert alert-info" role="alert">Didn't add instructions or explanation on how page changes with zip file.</div>
+  <div id="debug-console" class="alert alert-warning" role="alert">Didn't add instructions or explanation on how page changes with zip file.</div>
   <h2>Details</h2>
-  <p>Basically, bootstrap css takes care of scaling sections of different screen sizes. Jumbotron image at top and smaller images below with respond based on screen size. Also the font size for quote box will change based on screen size. It's all typical bootstrap class effects.</p>
-  <p>Used javascript with buttons below to call functions. These are defined in the script.js file. A click with cause the following things to happen…</p>
+  <p>Basically, bootstrap CSS takes care of scaling section elements for different media sizes. Jumbotron and smaller tile images also use bootstrap. Also the font size for quote box will change based on media size.</p>
+  <p>Used javascript with buttons below to call functions. These are defined in the script.js file. A click event will cause the following methods/actions to occur…</p>
 
   <ul class="list-unstyled">
     <li>change in color of h1 element</li>
@@ -50,15 +52,16 @@
     <li>substitution in quote box with different quote.</li>
   </ul>
 
-    <button class="btn-warning" onclick="alpha()">Quote 1</button>
-    <button class="btn-danger" onclick="beta()">Quote 2</button>
-    <button class="btn-success" onclick="charlie()">Quote 3</button>
-
+    <button class="btn-warning" onclick="click1()">Quote 1</button>
+    <button class="btn-danger" onclick="click2()">Quote 2</button>
+    <button class="btn-success" onclick="click3()">Quote 3</button>
+    <button class="btn-success" onclick="click0()">Master Click</button>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 
   </main>
+
   <footer>
     <div class="text-center">Powered by @fitzland</div>
   </footer>
