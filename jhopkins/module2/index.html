@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coursera Assignment: Module 2 ~ Responsive Layout</title>
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-<style>
-<!-- styles in an external file -->
-</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coursera Assignment: Module 2 ~ Responsive Layout</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+  </style>
 </head>
 <body>
 
-<h1>Module 2 Assignment</h1>
-<h2>Things to Remember</h2>
+<div class="container">
+
+<h1 class="text-center">Module 2 Assignment</h1>
+<h2 class="text-center">Things to Remember</h2>
 
 <div class="row">
   <section class="col-lg-4 col-md-6">
     <article>
-      <header id="item1">Atom</header>
+      <header id="item1" class="text-center">Atom</header>
       <p>open file with <code>ctrl+O</code></p>
       <p>open folder with <code>ctrl+shft+O</code></p>
       <p>open command palette <code>ctrl+shft+P</code></p>
@@ -27,18 +29,25 @@
   </section>
   <section class="col-lg-4 col-md-6">
     <article>
-      <header id="item2">github</header>
+      <header id="item2" class="text-center">github</header>
       <p>first edit file</p><code>$ git add .</code><br><code>$ git commit -m "message"</code><br><code>$ git push</code>
     </article>
   </section>
   <section class="col-lg-4 col-md-12">
     <article>
-      <header id="item3">browser-sync</header>
+      <header id="item3" class="text-center">browser-sync</header>
       <p>@ terminal use following command</p>
       <code>browser-sync start --server --directory --file "*"</code>
     </article>
   </section>
 </div>
+
+</div>
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
