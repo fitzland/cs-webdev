@@ -1,3 +1,40 @@
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-inverse {
+     /*background: #303F9F;*/
+    background: #2C436E;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    /*background: #1A237E;*/
+    background: #192E54;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+ .navbar-inverse .navbar-nav > .open > a:hover,
+ .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    /*background: #1A237E;*/
+    background: #192E54;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    /*background-color: #303F9F;*/
+    background-color: #2C436E;
+    color:#eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#000000;
+}
+
 .row-header{
     margin:0px auto;
     padding:0px auto;
@@ -6,8 +43,13 @@
 .row-content {
     margin:0px auto;
     padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
+    border-top: 1px ridge; /* border-top seemed to work better than border-bottom */
     min-height:400px;
+
+}
+
+main {
+      margin-bottom: 50px; /* this allows main content not to sit right on top of footer */
 }
 
 .row-footer{
@@ -19,7 +61,8 @@
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background: #7986CB ;
+    /*background: #7986CB;*/
+    background: #7996CB;
     color:floralwhite;
 }
 
@@ -27,4 +70,8 @@ address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
+}
+
+h3 + hr {
+  margin-top: 10px;
 }
